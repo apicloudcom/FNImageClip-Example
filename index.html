@@ -52,7 +52,7 @@
                     w: 200,
                     h: 200,
                     x: 80,
-                    y: 200,
+                    y: 20,
                     borderColor: '#0f0',
                     borderWidth: 1,
                     appearance: 'rectangle'
@@ -69,8 +69,8 @@
     
     function fnSave(){
         FNImageClip.save({
-            destPath: 'widget://image/pic1.png',
-            copyToAlbum: false,
+            destPath: 'fs://image/pic1.png',
+            copyToAlbum: true,
             quality: 1
         },function(ret, err){        
             if(ret) {
