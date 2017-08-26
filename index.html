@@ -45,12 +45,13 @@
                 w: api.winWidth,
                 h: api.winHeight - document.querySelector('.main').offsetHeight
             },
-            srcPath: 'widget://image/pic1.png',
+            srcPath: 'widget:/res/pic1.png',
+            highDefinition: true,
             style: {
-                mask: '#888',
+                mask: 'rgba(55,55,55,0.3)',
                 clip: {
-                    w: 200,
-                    h: 200,
+                    w: 150,
+                    h: 150,
                     x: 80,
                     y: 20,
                     borderColor: '#0f0',
@@ -69,7 +70,7 @@
     
     function fnSave(){
         FNImageClip.save({
-            destPath: 'fs://image/pic1.png',
+            destPath: 'fs://res/pic1.png',
             copyToAlbum: true,
             quality: 1
         },function(ret, err){        
